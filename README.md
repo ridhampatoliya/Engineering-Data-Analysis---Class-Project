@@ -58,5 +58,5 @@ issue)
 
 -   Best test error on validation set = **0.125**
 
-For more details please visit the [report](https://github.com/ridhampatoliya/Engineering-Data-Analysis---Class-Project/blob/master/Final_Report.pdf)
+Please go to [report](https://github.com/ridhampatoliya/Engineering-Data-Analysis---Class-Project/blob/master/Final_Report.pdf) for more information :)
 
