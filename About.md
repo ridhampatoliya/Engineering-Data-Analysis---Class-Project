@@ -61,20 +61,5 @@ This project was done in complete collaboration of all team members. Initially,
 all members came up with their best models and then best model was finalized
 after brainstorming.
 
-Contribution from each team member (in alphabetical order):
-
--   Karmit: •Technical analysis on MLR • Final editor of Phase I report •
-    Improvement in boosting
-
--   Prafull: •Technical analysis on Bagging • Final test results report •
-    Executive summary
-
--   Purva: •Technical analysis on Bagging • Final editor of Phase I & II report
-    • Executive summary
-
--   Ridham: •Technical analysis on Boosting • Model improvement report • Best
-    model report
-
--   Smriti: •Technical analysis on Boosting • Executive summary first draft •
-    Best model report
+For more details please visit the [report](https://github.com/ridhampatoliya/Engineering-Data-Analysis---Class-Project/blob/master/Final_Report.pdf)
 
