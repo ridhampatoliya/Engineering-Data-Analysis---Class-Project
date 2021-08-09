@@ -58,9 +58,5 @@ issue)
 
 -   Best test error on validation set = **0.125**
 
-This project was done in complete collaboration of all team members. Initially,
-all members came up with their best models and then best model was finalized
-after brainstorming.
-
 For more details please visit the [report](https://github.com/ridhampatoliya/Engineering-Data-Analysis---Class-Project/blob/master/Final_Report.pdf)
 
