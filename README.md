@@ -1,4 +1,4 @@
-![Clipboard with solid fill](media/db3f78901eadcbfb60358f854c3dea22.png)
+![Clipboard with solid fill]
 
 Through the series of experiments, our goal was to present a model with the best
 prediction. There were many different algorithms to choose from starting from
