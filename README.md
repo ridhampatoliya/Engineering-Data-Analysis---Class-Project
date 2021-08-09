@@ -1,5 +1,3 @@
-![Clipboard with solid fill]
-
 Through the series of experiments, our goal was to present a model with the best
 prediction. There were many different algorithms to choose from starting from
 linear regression, subset selection, regularization to decision trees, and
