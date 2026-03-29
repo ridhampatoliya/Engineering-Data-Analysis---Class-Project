@@ -1,62 +1,106 @@
-# About the Project
-Through the series of experiments, our goal was to present a model with the best
-prediction. There were many different algorithms to choose from starting from
-linear regression, subset selection, regularization to decision trees, and
-Random forests. But as the “No Free Lunch Policy” goes, each algorithm has its
-strengths and weaknesses, and we can use these properties to choose an algorithm
-and tune it to meet our goal.
+# Engineering Data Analysis Class Project
 
-**The Objective**:
+A graduate-level statistical learning project completed for **ISEN 613 (Spring 2021)**. This work compares multiple predictive modeling approaches in **R** and selects the strongest model for forecasting outcomes on unseen engineering data.
 
-Our goal is to obtain the best **predictions** from unseen data using different
-statistical learning algorithms.
+The project moves from baseline linear methods to more flexible tree-based ensembles, with a focus on model selection, validation performance, and practical predictive accuracy. Among the models tested, **Tree Boosting** produced the best overall results.
 
-**The Problem**:
+## Key Takeaways
 
-The training data set for this project consists of 550 data points as rows and 8
-columns as features. The test data consists of 218 data points and 8 columns as
-features. To understand the concepts of data analytics and explore various
-methodologies behind it, the team was tasked to build several models to predict
-the response for the data and select the best 3 amongst them.
+- Built and compared several statistical learning models on the same engineering dataset
+- Evaluated models using a consistent validation framework
+- Identified **Boosting** as the strongest-performing approach
+- Achieved a **validation error of 0.125** and **test MSE of 0.266** with the final model
+- Documented both the comparative study and the final selected model in separate markdown reports
 
-**Key Highlights**:
+## Project Overview
 
-We have researched extensively to learn about different statistical learning
-methods. Initially, we tried fitting simple linear models and simple decision
-trees. Because of non-linearity in data, we tried using models that can handle
-non-linearity better. We used different variations of decision trees and
-concluded that boosting is the best method that is aligned to our objectives.
-Tuning of hyper-parameters and Cross-Validation played an important role in the
-process. In our project, data analysis is done with R Statistical Software.
+The goal of this project was to develop predictive models using a labeled training dataset, compare their performance, and select the best model for generalization on unseen data.
 
-**The Solution Procedure**:
+The analysis explored a range of methods, including:
 
--   Visualizing data and looking for correlations and non-linearities
+- Multiple Linear Regression
+- Subset Selection / Regularization
+- Decision Trees
+- Bagging
+- Boosting
 
--   Recognition of suitable models
+This repository captures both the model comparison process and the final boosted-tree solution selected from that process.
 
--   Optimization of models
+## Problem Statement
 
--   Evaluation of optimized models using the same metric (test error on
-    validation set)
+The dataset provided for this project includes:
 
--   Choosing the best model
+- **Training set:** 550 observations and 8 input features
+- **Test set:** 218 observations and 8 input features
 
-**Results**:
+The objective was to train multiple statistical learning models, tune them appropriately, compare their predictive performance, and choose the strongest candidates for final evaluation.
 
-The 3 best models obtained with the lowest training error rates were MLR,
-Bagging and Boosting. On validation data, MLR, Bagging and Boosting resulted in
-a test error **of 2.087, 0.346** and **0.125** respectively. Boosting was chosen
-as the best model owing to its lowest error rate. The test data resulted in an
-MSE of **0.266** using the boosting model. (Caret package gives different
-results with different platforms. We are yet to figure out a way to manage that
-issue)
+## Methodology
 
--   Best model = **Tree Boosting**
+The project followed a structured model development workflow:
 
--   Best test error for unseen data = **0.266 (Model with Improvement)**
+1. Explore the dataset to identify correlations and nonlinear patterns
+2. Build candidate models using multiple statistical learning methods
+3. Tune model hyperparameters and improve fit
+4. Evaluate each model using a common validation metric
+5. Select the best-performing model for final prediction on unseen data
 
--   Best test error on validation set = **0.125**
+The full analysis was conducted in **R Statistical Software**.
 
-Please go to [report](https://github.com/ridhampatoliya/Engineering-Data-Analysis---Class-Project/blob/master/Final_Report.pdf) for more information :)
+## Results Summary
 
+| Model | Validation Error |
+| --- | ---: |
+| Multiple Linear Regression | 2.087 |
+| Bagging | 0.346 |
+| Boosting | 0.125 |
+
+### Final Selected Model
+
+- **Best model:** Tree Boosting
+- **Best validation error:** 0.125
+- **Test MSE on unseen data:** 0.266
+
+Boosting outperformed the other candidate models and was selected as the final approach because it handled nonlinear structure in the data more effectively than the simpler baseline methods.
+
+## Repository Structure
+
+- `01_Model_Selection_and_comparative_study.md`  
+  Comparative analysis of candidate models and the model selection process
+- `02_Final_Model_Boosted_Tree.md`  
+  Detailed write-up of the final boosted tree model
+- `Final_Report.pdf`  
+  Full report containing methodology, experiments, and conclusions
+- `train.xlsx`  
+  Training dataset
+- `test.xlsx`  
+  Test dataset
+- `r_project_metadata`  
+  R project metadata and supporting project files
+
+## Tools Used
+
+- **Language:** R
+- **Focus areas:** Statistical learning, predictive modeling, model comparison
+- **Techniques:** Cross-validation, hyperparameter tuning, nonlinear modeling, ensemble learning
+
+## Why This Project Matters
+
+This project demonstrates practical experience with:
+
+- Comparing multiple machine learning models instead of relying on a single approach
+- Selecting models based on validation performance rather than intuition alone
+- Working with nonlinear data and ensemble methods
+- Presenting analytical findings in both technical and report-ready formats
+
+## Notes
+
+Results may vary slightly across environments due to platform-specific behavior in certain R package implementations.
+
+## Author
+
+**Ridham Patoliya**
+
+## Course Context
+
+Completed as a class project for **ISEN 613** during the **Spring 2021** semester.
